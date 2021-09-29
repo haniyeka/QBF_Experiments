@@ -1,0 +1,147 @@
+#!/bin/bash
+
+## This script takes the results from feature extraction and writes a feature_values.arff, feature_costs.arff and feature_runstatus.arff files for an aslib sceanrio
+## Austin Stephen 8/22/2020
+
+FEATURE_VALUES=/project/mallet/astepehn/aslib/feature_values.arff
+FEATURE_COSTS=/project/mallet/astepehn/aslib/feature_costs.arff
+FEATURE_STATUS=/project/mallet/astepehn/aslib/feature_runstatus.arff
+rm failed_feat_extraction_list
+
+## prepping feature_values.arff and feature_costs.arff
+
+rm $FEATURE_VALUES
+echo @RELATION FEATURE_VALUES_QBF_2020 >> $FEATURE_VALUES
+echo -e "\n" >> $FEATURE_VALUES
+echo @ATTRIBUTE repetition NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE instance_id STRING  >> $FEATURE_VALUES
+echo @ATTRIBUTE EXIST_VARS NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE FORALL_VARS NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE TOTAL_VARS NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE CLAUSES NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE LITERALS NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE EXIST_SET NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE FORALL_SET NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE TOTAL_SET NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE UNARY_CLAUSES NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE BINARY_CLAUSES NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE TERNARY_MORE_CLAUSES NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE POS_HORN NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE NEG_HORN NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE EXIST_LIT_PER_CLAUSE NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE FORALL_LIT_PER_CLAUSE NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE EXIST_VARS_PER_SET NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE FORALL_POS_LITS_PER_CLAUSE NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE FORALL_NEG_LITS_PER_CLAUSE NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE OCCS_POS_NO_PER_VAR NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE OCCS_FORALL_NO_PER_VAR NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE OCCS_FORALL_POS_NO_PER_VAR NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE W_OCCS_POS_NO_PER_VAR NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE W_OCCS_FORALL_NO_PER_VAR NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE W_OCCS_FORALL_POS_NO_PER_VAR NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE W_PRODUCTS NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE LITN_LIT NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE LITEP_LIT NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE LITEN_LITE NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE LITEN_LITN NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE LITFN_LIT NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE LITFP_LITFN NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE OCCP_OCCN NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE OCCE_OCC NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE OCCEN_OCC NUMERIC  >> $FEATURE_VALUES
+echo @ATTRIBUTE OCCFP_OCCF NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE OCCEN_OCCE NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE OCCEN_OCCN NUMERIC >> $FEATURE_VALUES 
+echo @ATTRIBUTE OCCFP_OCCFN NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE TERMORE_CLAUSE NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE NEG_HORN_CLAUSE NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE WOCCN_WOCC NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE WOCCEP_WOCC NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE WOCCFN_WOCC NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE WOCCEP_WOCCE NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE WOCCEP_WOCCP NUMERIC >> $FEATURE_VALUES
+echo @ATTRIBUTE WOCCFN_WOCCN NUMERIC >> $FEATURE_VALUES
+echo -e "\n"  >> $FEATURE_VALUES 
+echo @DATA  >> $FEATURE_VALUES
+echo -e "\n" >> $FEATURE_VALUES
+
+rm $FEATURE_COSTS
+echo @RELATION FEATURE_COSTS_QBF_2020 >> $FEATURE_COSTS
+echo -e "\n" >> $FEATURE_COSTS
+echo @ATTRIBUTE instance_id STRING >> $FEATURE_COSTS
+echo @ATTRIBUTE repetition NUMERIC >> $FEATURE_COSTS
+echo @ATTRIBUTE base NUMERIC >> $FEATURE_COSTS
+echo -e "\n" >> $FEATURE_COSTS
+echo @DATA >> $FEATURE_COSTS
+echo -e "\n" >> $FEATURE_COSTS
+
+rm $FEATURE_STATUS
+echo @RELATION FEATURE_RUNSTATUS_QBF_2020 >> $FEATURE_STATUS
+echo "" >> $FEATURE_STATUS
+echo @ATTRIBUTE instance_id STRING >> $FEATURE_STATUS
+echo @ATTRIBUTE reptition NUMERIC >> $FEATURE_STATUS
+echo @ATTRIBUTE base {ok, timeout,memout,presolved,crash,unknown,other} >> $FEATURE_STATUS
+echo "" >> $FEATURE_STATUS
+echo @DATA >> $FEATURE_STATUS
+
+## control loop to iterate through every result
+
+RESULTS=/project/mallet/astepehn/feature_extraction/run_on_instances/feat_ext_res/*
+
+for result in $RESULTS ## iterates through every result
+do
+input=$result
+i=0
+VALID=1
+
+while read line ## iterates through every line in a file
+do
+
+################ General Checks #########################
+
+HOLD=${result##*/} ## tmp for NAME
+NAME=${HOLD%.*}	## the name of the result file which is the same as inst name
+
+## stores any files that had an error 
+if [[ $i -eq 0 && "$line" == *"Exception"* ]]; then
+	VALID=0
+	echo $NAME >> /project/mallet/astepehn/feature_extraction/run_on_instances/failed_feat_extraction_list
+fi
+
+
+
+##################### feature_values.arff #######################
+
+## Condtional checks for line 0 and an error
+if [[ $i -eq 0 && VALID -eq 1 ]]; then
+        echo "$NAME,1,$line" >> $FEATURE_VALUES
+fi
+
+##################### feature_runstatus.arff #######################
+
+## Conditional checks for line 0 and an error to only print once
+if [[ $i -eq 0 &&  VALID -eq 1 ]]; then
+        echo "$NAME,1,ok" >> $FEATURE_STATUS
+elif [[ $i -eq 0 &&  VALID -eq 0 ]]; then
+	echo "$NAME,1,crash" >> $FEATURE_STATUS
+fi
+
+##################### feature_costs.arff #######################
+
+
+if [[ $i -eq 2 && VALID -eq 1 ]]; then
+	echo -n $NAME,1,${line:5:9}, >> $FEATURE_COSTS
+fi 
+
+if [[ $i -eq 3 && VALID -eq 1 ]]; then
+	echo -n ${line:5:9}, >> $FEATURE_COSTS
+fi
+
+if [[ $i -eq 4 && VALID -eq 1 ]]; then
+	echo ,${line:5:9} >> $FEATURE_COSTS
+fi
+
+i=$((i+1))
+
+done < "$input"
+done

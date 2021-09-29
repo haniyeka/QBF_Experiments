@@ -1,0 +1,46 @@
+HQS DQBF solver
+---------------
+
+To get help, call
+    ./hqs --help
+
+To solve a formula, call HQS with
+    ./hqs <filename>
+where <filename> is the name of the input file in DQDIMACS
+format.
+
+To solve a formula and compute in case it is satisfied a Skolem
+function use
+    ./hqs --skolem=<outfile.aag> <filename>
+<outfile.aag> is the name of the file in which the Skolem functions
+should be stored. They are represented as a group of (shared) AIGs.
+The file format is the binary AIGER format.
+
+If you want to optimize the size of the Skolem functions, add one or
+both of the following parameters:
+    --skolem-interpol=1
+    --skolem-factor=1
+    --abc=<path_to_abc>
+The first command applies don't care minimization using interpolation,
+the second one tries to factor out a function which is independent of
+the currently considered variable (often does not have a strong effect).
+The third command uses the tool ABC (https://bitbucket.org/alanmi/abc)
+to get smaller AIGs. Here, <path_to_abc> is the path to the ABC binary.
+
+
+proof_checker
+-------------
+
+The proof_checker binary allows to verify the correctness of the
+computed Skolem functions. Call it with
+
+./proof_checker <formula> <Skolem>
+
+<formula> is the file (in DQDIMACS format) of the DQBF formula,
+<Skolem> the file (in binary AIGER format) of the computed Skolem functions.
+
+It first checks whether the syntactic support each Skolem function
+is contained in the variable's dependency set. In a second step it
+checks whether replacing all existential variables with their Skolem
+function turns the formula into a tautology.
+

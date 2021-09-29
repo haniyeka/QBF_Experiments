@@ -1,0 +1,66 @@
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wheader-guard failed with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_166f2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_166f2.dir/build.make CMakeFiles/cmTC_166f2.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_166f2.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -DHAVE_FLAG_-Wheader-guard   -Wheader-guard -o CMakeFiles/cmTC_166f2.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wheader-guard'
+make[1]: *** [CMakeFiles/cmTC_166f2.dir/build.make:66: CMakeFiles/cmTC_166f2.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_166f2/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15561/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15561.dir/build.make CMakeFiles/cmTC_15561.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15561.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_15561.dir/CheckSymbolExists.c.o   -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_15561
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15561.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_15561.dir/CheckSymbolExists.c.o  -o cmTC_15561 -rdynamic 
+CMakeFiles/cmTC_15561.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_15561.dir/build.make:98: cmTC_15561] Error 1
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_15561/fast] Error 2
+
+File /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8ec3a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ec3a.dir/build.make CMakeFiles/cmTC_8ec3a.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8ec3a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8ec3a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8ec3a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ec3a.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8ec3a.dir/CheckFunctionExists.c.o  -o cmTC_8ec3a -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8ec3a.dir/build.make:98: cmTC_8ec3a] Error 1
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_8ec3a/fast] Error 2
+
+

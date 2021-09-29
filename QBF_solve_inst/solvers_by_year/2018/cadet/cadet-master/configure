@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+
+# clean up old artifacts (if any)
+if [ -e "Makefile" ]; then
+  echo "Clean old artifacts"
+  make clean
+fi
+
+prefix=/usr/local
+debugsym=false
+satsolver="picosat"
+
+for arg in "$@"; do
+    case "$arg" in
+    --prefix=*)
+        prefix=`echo $arg | sed 's/--prefix=//'`
+        ;;
+
+    --debug)
+        debugsym=true
+        ;;
+    
+    --satsolver=*)
+        satsolver=`echo $arg | sed 's/--satsolver=//'`
+        ;;
+
+    --help)
+        echo 'usage: ./configure [options]'
+        echo 'options:'
+        echo '  --prefix=<path>: installation prefix'
+        echo '  --debug: include debug symbols'
+        echo '  --satsolver=<value>: either picosat or minisat'
+        echo 'all invalid options are silently ignored'
+        exit 0
+        ;;
+    esac
+done
+
+echo 'generating makefile ...'
+echo "PREFIX = $prefix" > Makefile
+
+if $debugsym; then
+    echo 'CFLAGS = -g -DDEBUG -Wall -Wextra -pedantic' >> Makefile
+    echo 'CPPFLAGS = -g -DDEBUG -Wall -Wextra -pedantic' >> Makefile
+else
+  echo 'CFLAGS = -O3 -flto -DNDEBUG' >> Makefile
+  echo 'CPPFLAGS = -O3 -flto -DNDEBUG' >> Makefile
+fi
+
+if [ "$satsolver" = "minisat" ]; then
+  echo 'CFLAGS += -DUSE_MINISAT' >> Makefile
+  echo 'CPPFLAGS += -DUSE_MINISAT' >> Makefile
+fi
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    echo 'SHARED = -shared -Wl,-soname,libcadet -o libcadet.so -fPIC ' >> Makefile 
+elif [[ "$OSTYPE" == "darwin"* ]]; then # OSX
+    echo 'SHARED = -shared -Wl,-install_name,libcadet.so -o libcadet.so -fPIC ' >> Makefile
+# elif [[ "$OSTYPE" == "cygwin" ]]; then
+        # POSIX compatibility layer and Linux environment emulation for Windows
+# elif [[ "$OSTYPE" == "msys" ]]; then
+        # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
+else
+    echo 'Building shared libraries not supported for this OS. See configure script'
+    echo 'SHARED = ' >> Makefile
+fi
+
+cat Makefile.in >> Makefile
+
+echo 'ensuring Python package numpy and pyplot is available'
+pip3 install --user numpy
+pip3 install --user matplotlib
+
+echo 'configuration complete, type make to build.'
+

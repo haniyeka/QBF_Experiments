@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.NullPointerException
+	at QbfParser.parse(QbfParser.java:71)
+	at QbfManager.loadData(QbfManager.java:16)
+	at Aqme.main(Aqme.java:10)
+
+real	0m0.408s
+user	0m0.341s
+sys	0m0.039s

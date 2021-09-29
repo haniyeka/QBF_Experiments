@@ -1,0 +1,390 @@
+----------------------------------
+- SKIZZO CHANGE LOG - VERSIONING -
+----------------------------------
+
+This file is a log of the changes and improvements made in the implementation of
+the QBF solver "sKizzo". Major updates and minor changes are reported since the
+first version of the solver (Tech. Rep. TR04-11-03, ITC-Irst, November 2004).
+
+A three-position versioning scheme is adopted, together with the revision number
+of the source management system used (SVN), like in "sKizzo X.Y.Z - rev. K":
+
+- The first digit gives the major version of the solver. At present, it is X=0, 
+  meaning that the solver is to be considered of beta-quality.
+- A change in the second digit means that major improvements are provided. A 
+  unique revision number "K" is associated to each second-digit release.
+- A third optional digit is used for mainteinance releases that only add
+  bugfixes and small changes. Such third-digit improvements may not have a
+  revision number (es: v0.6.1, rev. 2XX) so long as they just incorporate sparse
+  fixes from some forthcoming second-digit release.
+
+
+
+------------------------------------
+- VERSION 0.8.2 - SVN revision 3XX -
+------------------------------------
+
+ COMMENT:
+  - Maintenance version
+  - Overall stability improved
+  - Universal binary for MAC
+  - Released March 15, 2006
+
+ NEW FEATURES:
+  - [r324] Removed an incompatibility with Intel-based MACs. Now the executable
+           for MAC OSX is universal (PowerPC and Intel).
+
+ BUG FIXES:
+  - [r293] Removed a divide-by-zero crash in user trace
+  
+ RE-ENGINEERIZATION:
+  - [r286] Under linux, free memory size is now read without a file-based,
+           process-spanning procedure. This re-engineerization also removes a
+           bug of the previous implementation that was causing some crashes
+		   (thanks to Horst Samulowitz for reporting the issue)
+  - [r299] Now the solver parses the /proc/meminfo interface of linux kernel 2.6
+  
+ COSMETICS:   
+  - [r287] MEMOUT now reported as a "standard" possible outcome (rather than as
+    [r292] an internal error). Memout is now reported as "-6" exit code, 
+           printed on stdout, and logged in the family reports.
+
+
+
+------------------------------------
+- VERSION 0.8.1 - SVN revision 2XX -
+------------------------------------
+
+ COMMENT:
+  - Maintenance version
+  - Released December 13, 2005
+
+ BUG FIXES:
+  - [r274] Buffer over/under-run removed using libgmalloc (great tool!)
+  - [r268] Some buffer over/under-run removed using libgmalloc.
+           Probably these bugs have never caused problem so far
+  - [r266] Fixed an infinite loop problem occurring when SAT based reasoning 
+           is disabled and some other conditions occur at once
+  - [r265] Fixed a wrong computation of equivalent indexes in SER that could 
+           have caused some fake inconsistency detections
+
+
+
+----------------------------------
+- VERSION 0.8 - SVN revision 257 -
+----------------------------------
+
+ COMMENT:
+  - The "minisat" solver has been integrated
+  - Large improvements in symbolic binary reasoning
+  - Many commandline options added
+  - Documented by the "sKizzo's User Manual v0.4"
+  - Released October 20, 2005
+    
+ NEW FEATURES (see the manual for details):
+  - [r245] Added the "-pre" option to control the order of application of 
+           symbolic rules
+  - [r244] Added the "-SG" option to control the switch to SAT-based reasoning
+  - [r243] Added the "-dontdescend" option to prevent recursive batch processing
+  - [r242] Added support for multiple configurations in each "sKizzo.conf" file
+  - [r241] Added controllable heuristics for the initial statically computed 
+           BDD variable ordering
+  - [r239] Added the capability to dump a "flat" report
+  - [r238] Added an auto-selection feature for SAT solvers
+  - [r224] The theory behind SER has been improved, and this yields a better 
+           implementation.
+  - [r221] The theory behind SHBR has been improved, and this yields a better 
+           implementation.
+  - [r216] The "minisat" SAT solver v 1.14 has been integrated
+
+ RE-ENGINEERIZATION:
+  - [r235] MOMS heuristics initialization made lazy (it happens just before B 
+           is entered, not when Q is left).
+  - [r218] Dual SCCs are now identified. Only one of the two is processed.
+           Dual loops within potentially inconsistent SCC identified and 
+           avoided. These optimizations speed up SER by a factor of 4.
+
+ BUG FIXES:
+  - [r252] Fixed a wrong interaction between multiple groundization and BDD 
+           reordering heuristics that might have caused crashes
+  - [r249] Fixed a problem in memory monitoring that was causing some crashes
+           (thanks to Hector Palacios Verdes for reporting the issue)
+  - [r233] Fixed a bug (thanks to Martina Seidl for reporting the issue) 
+           causing unsound answers on some small instances completely solved
+           in the Q state
+  - [r231] Time spent in the external "siege" process now correctly reported
+  - [r219] Fixed a crush occurring when some options but no instance name is 
+           given at commandline
+
+ COSMETICS:   
+  - [r256] Commandline help updated with information on the new switches
+  - [r231] The name of the selected SAT solver is now reported when you are in
+           verbose mode and a ground expansion is performed
+  - [r219] Long paths are now cut at 70 characters on screen
+
+
+
+------------------------------------
+- VERSION 0.7.1 - SVN revision 2XX -
+------------------------------------
+
+ COMMENT:
+  - Maintenance version
+  - Released October 11, 2005
+  
+ BUG FIXES:
+  - [r233] Fixed a bug (reported by Martina Seidl) causing wrong "TRUE" answers
+           on some small instances entirely decided in the "Q" status.
+
+
+
+----------------------------------
+- VERSION 0.7 - SVN revision 213 -
+----------------------------------
+
+ COMMENT:
+  - Minor update
+  - Some new switches added and quite some bugs fixed
+  - Released September 3, 2005
+
+ NEW FEATURES (see the manual for details):
+  - [r205] Definition of "cheap variable" in QRES-based reasoning (Q style) 
+           improved. Now a cheap variable is one whose elimination reduces the
+           overall number of literals, or leaves that number unchanged but 
+           reduces the number of clauses.
+  - [r183] Added the "-learning" option (-nolearning removed) for a 
+           fine-grained control over the learning mechanism
+  - [r183] Added the "-hucp" option that allows the user to control the 
+           ordering in which symbolic unit clauses are propagated
+  - [r183] Added the "-BS" option to control the interaction between the "B" 
+           inference style and the "S" one.
+  - [r161] Added the "sKizzo.conf" facility to use family-specific options and 
+           timeouts in the batch mode
+  - [r160] Added the "-solver" option for SAT solving, which currently supports
+           zChaff and the siege_v4 solver.
+
+ RE-ENGINEERIZATION:
+  - [r178] Fully shared memory introduced for cube computation of multiple 
+           symbolic formulas in branching reasoning.
+
+ BUG FIXES:
+  - [r206] Moved to DDDMP version 2.0.3. This DDDMP release fixes some subtle 
+           problems of the logging capability. Thanks to Stefano Quer and 
+           Gianpiero Cabodi for their quick response.
+  - [r195] Learned symbolic clauses obtained by resolving (merging) over other 
+           learned clauses were missing a forall-reduction equivalent 
+           transformation. This was causing soundness problems in branching 
+           reasoning with learning. Fixed.
+  - [r193] Failing to recognize and remove certain tautological clauses from 
+           the input formula was causing incorrect behavior on certain 
+           instances. Thanks to Stefan Woltran and Martina Seidl for pointing
+           out this issue. Fixed.
+  - [r188] Fixed a bug that caused (on certain occasions) a non-NULL value
+           (with crashes in branching reasoning) for the bdd pointer in copies 
+           of some empty symbolic clauses.
+  - [r176] Removed a BDD leaking due to UCP index sets replication           
+  - [r173] Fixed some bad initializations in SRES that caused a fake rollback
+           entry as a last entry in the some logs
+  - [r172] BDD reference leaking fixed in SSUB
+  - [r165] Big memory leaking while logging SRES steps removed
+  - [r158] Log file version 1.3 introduced, which fixes a problem with logging
+           of symbolic equivalences.
+
+ COSMETICS:   
+  - [r210] QBFs are TRUE/FALSE instead of SAT/UNSAT now
+  - [r184] Added a heading line in the family report file
+  - [r175] The number of ground variables rather than clauses was printed in 
+           SAT problem generation. Fixed.
+
+
+
+------------------------------------
+- VERSION 0.6.1 - SVN revision 152 -
+------------------------------------
+
+ COMMENT:
+  - Maintenance version
+  - Released May 6, 2005
+  
+ BUG FIXES:
+  - [r151] Fixed a bug causing unsound answers when all the following 
+           conditions occur at once:
+           - the Q style is enabled and suffices to answer
+           - the instance is unsatisfiable
+           - the empty clauses is derived via q-resolution
+           - the empty clause is derived in the very last step             
+           Discovered by running ozziKs on the log for tree-exa2-10.qdimacs
+
+
+
+----------------------------------
+- VERSION 0.6 - SVN revision 151 -
+----------------------------------
+
+ COMMENT:
+  - First public version
+  - Released in beta-testing on May 2, 2005
+  - Documented by the "sKizzo's User Manual v0.1"
+
+ NEW FEATURES:
+  - [r132] Added the text/bin optional argument to -log
+  - [r128] Added support for logging/reconstruction of pure branching reasoning
+  - [r123] Added support for logging/reconstruction of pure SAT-based reasoning
+  - [r122] Added a new scheduling heuristics for SRES (-hdres udepth)
+  - [r100] Strong redundancy elimination via BDD analysis added to ground 
+           reasoning (far less clauses generated)
+  - [r89]  Stop for "unable-to-decide" condition added
+  - [r87]  Log capability for ground QBF reasoning added
+
+ RE-ENGINEERIZATION:
+  - [r95]  Memory allocation for new clauses in SRES postponed after the clause
+           is verified not to be trivially satisfied
+
+ BUG FIXES:
+  - [r147] Removed a bug in the interaction between SRES and the checkpointing
+           mechanism that causes segfaults right before exiting on certain 
+           UNSAT instances
+  - [r145] Fixed a bug that prevented certain shift to SAT-based reasoning
+  - [r126] Fixed a bug in the interaction between SSUB and branching reasoning
+           that could cause the solver to miss solutions
+  - [r121] Removed a bug in SRES variable ordering heuristics that
+           caused all the existential variables (but the one in the very last
+           scope) not to be really reordered for elimination
+  - [r102] Removed an out-of-bound issue in the logger that caused the 
+           production of wrong logs for certain instances
+  - [r101] Fixed a bug in the deallocation of data structure for 
+           conflict-directed backjumping
+  - [r93]  Fixed a bug in the way SHBR manages the implication graph
+  - [r92]  Initialization bug in MOMS heuristics removed
+  - [r91]  Large memory leaking removed
+  - [r85]  Fixed a bug introduced with r74 in cubes initialization
+
+ COSMETICS:   
+  - [r146] Temporary files produced during the evaluation now removed
+  - [r143] Added the "-mem", "-copyright", "-hdres" option
+  - [r82]  Out-of-mem errors traced to stdout
+  - [r78]  Added the "-hbdd" option
+
+
+
+---------------------------------
+- VERSION 0.5 - SVN revision 77 -
+---------------------------------
+
+ COMMENT:
+  - Final version submitted to the QBF05 evaluation
+  - Versions 0.3 and 0.4 were used in the preliminary QBF05 evaluation
+  - Finalized on February 2005
+  
+ NEW FEATURES:
+  - [r72] VSDIS heuristics added to the branching reasoning subsystem
+  - [r64] Unsatisfiable core extraction from zChaff traces (zVerify) now 
+          contributes to conflict analysis
+  - [r62] Symbolic learning added (relevance-bounded learning)
+  - [r61] Conflict analysis and conflict directed backjumping added 
+  - [r58] Branching reasoning doesn't use SRES anymore in nested calls.
+  - [r52] Model verification implemented. Used in the IJCAI05 paper.
+  - [r41] Logging capacity added ("-log" switch); log of SAT solving and 
+          branching reasoning still missing.
+
+ RE-ENGINEERIZATION:
+  - [r74] Shared memory introduced in the BDD treatment of branching 
+          reasoning (cubes for skolem functions).
+
+ BUG FIXES:
+  - [r60] Fixed a bug in branching reasoning that could cause soundness
+          problems.
+  - [r59] Fixed a bug in QRES/SRES scheduling heuristics that could led
+          to unsound results.
+
+ COSMETICS:   
+  - [r57] Added "-dump" and "-treeonly" options
+
+
+
+---------------------------------
+- VERSION 0.2 - SVN revision 40 -
+---------------------------------
+
+ COMMENT: 
+  - Not public.
+  - Solves certain big (unpublished) game instances by Bart Selman.
+  - Finalized on January 2005
+  
+ NEW FEATURES:
+  - [r40] The incremental and monolitic version of SPLE are both active and
+          compete for resources
+  - [r38] Precondition mechanism added to rule activation. Currently, it is
+          used to prevent binary reasoning from executing before SUCP is at
+          the fixpoint.		  
+  - [r33] SHBR extended to extract and solve independent binary subformulas.
+  - [r24] Symbolic Subsumption added as a sixth inference rule (careful
+          scheduling, incomplete on large formulas, binary-search and 
+          linear-search based subsumption checks adopted)
+  - [r24] On-the-fly, signature based, backward subsumption control added to
+          the symbolic machinery
+  - [r11] Checkpoint/rollback mechanisms added to SRES (and to the whole
+          system); when a blow-up (or a mem-out) is detected a different
+          inference strategy is attempted after rolling back to a secure, 
+          (smaller) checkpointed formula.
+  - [r10] Symbolic Directional Resolution added as a fifth inference rule; it
+          resolves bottom-up the cheaptest node; it keeps under control memory
+          consumption;
+  - [r9]  Symbolic Inference Policy completely redesigned
+  - [r1]  A bounded form of q-resolution is added as a pre-processing step; 
+          it works until fixpoint by (1) applying q-resolution to all the
+          variables that do not enlarge the size of the formula, and 
+          (2) re-constructing the syntactic tree
+
+ RE-ENGINEERIZATION:
+  - [r36] Efficiency-monitoring for the ground case completely re-written. Now
+          it dynamically adjusts frequency so to avoid consuming more than 10%
+          of the time, and does other controls more carefully
+  - [r33] Both SER and SHBR have a persistent status between invocations; when
+          re-called they restart working where they leaved. So do all the other
+          rules.
+  - [r30] Resolution steps that do not split the symbolic representation now
+          reuse the previous clause structure (instead of deleting/adding);
+          great benefit for long clauses;
+  - [r27] Clause removal process made less elegant but faster
+  - [r23] BDD reordering heuristics tuned
+  - [r22] BDD data structure size computation and minterm count made completely
+          lazy
+  - [r1]  New heuristics added to SUCP; it min-maxes the size of clauses in the
+          resolving list
+  - [r1]  Initial tautology check performed in O(n) instead of O(n^2)
+  - [r1]  Qbf normalization made faster by using further clause-set indexing
+  - [r1]  Tree reconstruction now only records dependencies on the frontier of
+          open nodes
+  - [r1]  The whole recursive tree analysis has been rewritten iteratively
+  - [r1]  Lazy caching of dominating universals now share memory and reuse
+          previous computations
+  - [r1]  Recursive cube computation rewritten iteratively
+  - [r1]  Clause addition due to assignments and substitutions is now made in
+          two-steps (first all clause removals, then clause additions possibly
+          triggering subsumption-based removal). This is to simplify race 
+          conditions controls between addition and removals.
+
+ BUG FIXES:
+  - [...] Many out-of-mem crashes removed
+  - [...] Memory deallocation made better
+  - [r28] SUCP management of unit clauses is now fully integrated with other
+          rules' behaviour (no "ghost" unit clauses due to removals performed
+          by other rules)
+
+ COSMETICS:   
+  - [r1] I/O is made compliant with the usual convention (return values and 
+         so on);
+
+
+
+-------------------------------
+- VERSION 0.1 - (no SVN yet)  -
+-------------------------------
+
+COMMENT:
+  - First stable release. 
+  - Not public. 
+  - Mainly documented in the Tech. Rep. TR04-11-03, ITC-Irst, 2004
+  - Used to perform TR's tests.
+  - Approx. date: October 2004

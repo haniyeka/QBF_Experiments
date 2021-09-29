@@ -1,0 +1,120 @@
+==============================================================================
+Copyright
+==============================================================================
+
+Copyright (c) 2004-2005
+Marco Benedetti
+
+
+==============================================================================
+Definitions
+==============================================================================
+
+--- By "SOFTWARE" we mean the software "sKizzo" and the associated
+    documentation files, which are offered under the terms of this License.
+
+--- By "AUTHOR" we mean Marco Benedetti, i.e. the individual who created the
+    SOFTWARE, and who offers it under the terms of this License.
+
+--- By "USER" we mean an individual or entity exercising rights under this 
+    License who has not previously violated the terms of this License
+    with respect to the SOFTWARE, or who has received express permission 
+    from the AUTHOR to exercise rights under this License despite a previous
+    violation.
+
+--- By "NONCOMMERCIAL USE" we mean use for research, evaluation, or 
+    development for the purpose of advancing knowledge, teaching, learning,
+    or customizing the technology for personal use.  
+    NONCOMMERCIAL USE expressly excludes use or distribution
+    for direct or indirect commercial (including strategic) gain or advantage.
+
+
+==============================================================================
+License
+==============================================================================
+
+By using the SOFTWARE the USER indicates that he or she has read, 
+understood and will comply with the following:
+
+--- The AUTHOR hereby grants USER nonexclusive permission to use 
+    the SOFTWARE for NONCOMMERCIAL USE only.
+
+--- Permission to copy and redistribute the SOFTWARE is granted so long as
+    no fee is charged, and so long as the the present unmodified copyright
+    notice (including the disclaimer below) appear in all the copies made.
+
+--- For any other permission (including--but not limited to--the permission 
+    to use the SOFTWARE for commercial purposes, the permission to 
+    create/distribute derivative or modified works, etc.) please
+    contact the AUTHOR at mabene@gmail.com.
+
+
+==============================================================================
+Disclaimer
+==============================================================================
+
+This SOFTWARE is provided "as is". The AUTHOR makes no representations or 
+warranties, express or implied, including those of merchantability or fitness
+for any purpose. The AUTHOR shall not be liable under any circumstances for
+any direct, indirect, special, incidental, or consequential damages with
+respect to any claim by USER or any third party on account of or arising from
+the use, or inability to use, the SOFTWARE.
+
+ 
+==============================================================================
+Copyrights and Licenses for Third Party Software Distributed with the SOFTWARE
+==============================================================================
+
+The SOFTWARE contains compiled code written by third parties. Such pieces 
+of software have additional or alternate copyrights, licenses, and/or 
+restrictions. Namely, the SOFTWARE is statically linked against:
+
+1) The CUDD package, version 2.4.0, by Fabio Somenzi (Department of Electrical 
+   and Computer Engineering, University of Colorado at Boulder).
+   The CUDD package is copyright of the University of Colorado at Boulder.
+   The autoritative source of information on the CUDD is:
+   http://vlsi.colorado.edu/~fabio/CUDD/
+
+2) The DDDMP-2.0 package, version 2.0.3, by Gianpiero Cabodi and Stefano Quer.
+   The DDDMP package is Copyright (c) 2002 by Politecnico di Torino.
+   The autoritative source of information on DDDMP is:
+   http://staff.polito.it/stefano.quer/research/tool/tool.htm
+
+3) zChaff, version 2004.5.13, a search-based SAT solver by the SAT Research 
+   Group at the Princeton University. zChaff is Copyright 2000-2004, 
+   Princeton University, with all rights reserved.
+   zChaff is for non-commercial purposes only. No commercial use of zChaff is
+   allowed withouth written permission from Princeton University. 
+   Please contact Sharad Malik (malik@ee.princeton.edu) for details.
+   The autoritative source for information on zChaff is:
+   http://www.princeton.edu/~chaff/software.html
+
+4) minisat, version 1.14, a SAT solver by Niklas Een and Niklas Sorensson.
+   In compliance with minisat's license, we include the following notes
+   taken from the minisat official distibution (in the quoted
+   text below the word "Software" refers to minisat):
+    . 
+    . MiniSat -- Copyright (c) 2003-2005, Niklas Een, Niklas Sorensson
+    . 
+	. Permission is hereby granted, free of charge, to any person obtaining a
+    . copy of this software and associated documentation files (the
+    . "Software"), to deal in the Software without restriction, including
+    . without limitation the rights to use, copy, modify, merge, publish,
+    . distribute, sublicense, and/or sell copies of the Software, and to
+    . permit persons to whom the Software is furnished to do so, subject to
+    . the following conditions:
+    . 
+    . The above copyright notice and this permission notice shall be included
+    . in all copies or substantial portions of the Software.
+    . 
+    . THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    . OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    . MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    . NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+    . LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+    . OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+    . WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    . 
+    The autoritative source for information on minisat is:
+    http://www.cs.chalmers.se/Cs/Research/FormalMethods/MiniSat/MiniSat.html
+

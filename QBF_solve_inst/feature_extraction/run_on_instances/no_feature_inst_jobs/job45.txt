@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH --account=mallet
+#SBATCH --time=6:00:00
+#SBATCH --output=/project/mallet/astepehn/feature_extraction/run_on_instances/feat_ext_res/missing_res45
+#SBATCH --partition=teton-hugemem
+#SBATCH --mem=500000
+srun time java -cp /project/mallet/astepehn/feature_extraction Aqme /project/mallet/astepehn/instances.qdimacs/4qbf-5cnf-150var-2100cl.2.qdimacs

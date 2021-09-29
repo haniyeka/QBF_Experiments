@@ -1,0 +1,25 @@
+#!/bin/bash
+
+MAIN=/project/mallet/astepehn
+
+rm -r $MAIN/feature_extraction/run_on_instances/no_feature_inst_jobs/*
+
+comm -32 <(ls -1 $MAIN/instances_qdimacs) <(ls -1 $MAIN/feature_extraction/run_on_instances/feat_ext_res) > hold.txt 
+
+#mkdir no_feature_inst_jobs
+i=0
+
+while read inst;
+do
+NAME=${inst##*/}
+echo "#!/bin/bash" >> $MAIN/feature_extraction/run_on_instances/no_feature_inst_jobs/job$i.txt
+echo "#SBATCH --account=mallet" >> $MAIN/feature_extraction/run_on_instances/no_feature_inst_jobs/job$i.txt
+echo "#SBATCH --time=6:00:00" >> $MAIN/feature_extraction/run_on_instances/no_feature_inst_jobs/job$i.txt
+echo "#SBATCH --output=$MAIN/feature_extraction/run_on_instances/feat_ext_res/missing_res$i" >> $MAIN/feature_extraction/run_on_instances/no_feature_inst_jobs/job$i.txt
+echo "#SBATCH --partition=teton-hugemem" >> $MAIN/feature_extraction/run_on_instances/no_feature_inst_jobs/job$i.txt
+echo "#SBATCH --mem=500000" >> $MAIN/feature_extraction/run_on_instances/no_feature_inst_jobs/job$i.txt
+echo "srun time java -cp $MAIN/feature_extraction Aqme $MAIN/instances.qdimacs/$inst" >> $MAIN/feature_extraction/run_on_instances/no_feature_inst_jobs/job$i.txt
+i=$(( $i+1 ))
+done <hold.txt
+
+rm hold.txt

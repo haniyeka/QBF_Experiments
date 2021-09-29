@@ -1,0 +1,14 @@
+#!/bin/bash
+
+module load swset/2018.05
+module load gcc/7.3.0
+module load jdk/14.0.1
+
+JOBS=/project/mallet/astepehn/feature_extraction/run_on_instances/runscripts_for_cluster/*
+
+for job in $JOBS;
+do
+sleep .01
+echo "sbatch $job" | bash
+done
+

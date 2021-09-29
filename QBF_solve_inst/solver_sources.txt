@@ -1,0 +1,21 @@
+solver, year, source
+hqs_2016-05-16, 2016, https://projects.informatik.uni-freiburg.de/projects/dqbf/files
+picosat, 2016, https://extgit.iaik.tugraz.at/scos/ijtihad/-/tree/master/picosat
+hqspre-1.3 , 2017 , https://projects.informatik.uni-freiburg.de/projects/dqbf/files
+ghostq, 2017, https://www.wklieber.com/ghostq/
+rareqs, 2017, https://github.com/maelvls/rareqs
+lingeling, 2017, https://extgit.iaik.tugraz.at/scos/ijtihad/-/tree/master/lingeling
+itijuhad, 2017, https://extgit.iaik.tugraz.at/scos/ijtihad
+hqspre-1.4 , 2018 , https://projects.informatik.uni-freiburg.de/projects/dqbf/files
+hqs_2018-08-30, 2018, https://projects.informatik.uni-freiburg.de/projects/dqbf/files
+qfun, 2018, http://sat.inesc-id.pt/~mikolas/sw/qfun/
+cqesto, 2018, http://sat.inesc-id.pt/~mikolas/sw/cqesto/
+cadet, 2018, https://github.com/MarkusRabe/cadet
+idq, 2018, https://github.com/jurajsic/DQBFbenchmarks/tree/master/solvers
+dynqbf, 2018, https://github.com/gcharwat/dynqbf/releases
+dcaqe, 2019, https://github.com/jurajsic/DQBFbenchmarks/tree/master/solvers
+HQS, 2020, https://github.com/jurajsic/DQBFbenchmarks/tree/master/solvers
+DQBDD, 2020, https://github.com/jurajsic/DQBFbenchmarks/tree/master/solvers
+caqe, 2020, https://github.com/ltentrup/caqe, https://github.com/jurajsic/DQBFbenchmarks/tree/master/solvers
+iprover, 2020, https://gitlab.com/korovin/iprover, https://github.com/jurajsic/DQBFbenchmarks/tree/master/solvers
+pedant, 2020, https://github.com/jurajsic/DQBFbenchmarks/tree/master/solvers

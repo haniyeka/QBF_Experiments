@@ -1,0 +1,915 @@
+The system is: Linux - 4.8.13-1-ARCH - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/3.7.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/3.7.1/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d97b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d97b1.dir/build.make CMakeFiles/cmTC_d97b1.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d97b1.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_d97b1.dir/testCCompiler.c.o   -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_d97b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d97b1.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_d97b1.dir/testCCompiler.c.o  -o cmTC_d97b1 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_db4f2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_db4f2.dir/build.make CMakeFiles/cmTC_db4f2.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_db4f2.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_db4f2.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_db4f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db4f2.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_db4f2.dir/CMakeCCompilerABI.c.o  -o cmTC_db4f2 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release
+Thread model: posix
+gcc version 6.2.1 20160830 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_db4f2' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoKYtof.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_db4f2 /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_db4f2.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_db4f2' '-rdynamic' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_db4f2/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_db4f2.dir/build.make CMakeFiles/cmTC_db4f2.dir/build]
+  ignore line: [make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_db4f2.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_db4f2.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_db4f2]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db4f2.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_db4f2.dir/CMakeCCompilerABI.c.o  -o cmTC_db4f2 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.2.1 20160830 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_db4f2' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoKYtof.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_db4f2 /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_db4f2.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccoKYtof.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_db4f2] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../..]
+    arg [CMakeFiles/cmTC_db4f2.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1;/usr/lib;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_47729/fast"
+/usr/bin/make -f CMakeFiles/cmTC_47729.dir/build.make CMakeFiles/cmTC_47729.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47729.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_47729.dir/feature_tests.c.o   -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_47729
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47729.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_47729.dir/feature_tests.c.o  -o cmTC_47729 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_510e5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_510e5.dir/build.make CMakeFiles/cmTC_510e5.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_510e5.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_510e5.dir/feature_tests.c.o   -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_510e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_510e5.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_510e5.dir/feature_tests.c.o  -o cmTC_510e5 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_96f77/fast"
+/usr/bin/make -f CMakeFiles/cmTC_96f77.dir/build.make CMakeFiles/cmTC_96f77.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96f77.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_96f77.dir/feature_tests.c.o   -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_96f77
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96f77.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_96f77.dir/feature_tests.c.o  -o cmTC_96f77 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b0f73/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0f73.dir/build.make CMakeFiles/cmTC_b0f73.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b0f73.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_b0f73.dir/testCXXCompiler.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_b0f73
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0f73.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_b0f73.dir/testCXXCompiler.cxx.o  -o cmTC_b0f73 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3b3e1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b3e1.dir/build.make CMakeFiles/cmTC_3b3e1.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3b3e1.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_3b3e1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_3b3e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b3e1.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_3b3e1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3b3e1 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release
+Thread model: posix
+gcc version 6.2.1 20160830 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b3e1' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccE5glnI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3b3e1 /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_3b3e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b3e1' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3b3e1/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_3b3e1.dir/build.make CMakeFiles/cmTC_3b3e1.dir/build]
+  ignore line: [make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_3b3e1.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_3b3e1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_3b3e1]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b3e1.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_3b3e1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3b3e1 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.2.1 20160830 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b3e1' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccE5glnI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3b3e1 /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_3b3e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccE5glnI.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_3b3e1] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../..]
+    arg [CMakeFiles/cmTC_3b3e1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1;/usr/lib;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c34a8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c34a8.dir/build.make CMakeFiles/cmTC_c34a8.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c34a8.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_c34a8.dir/feature_tests.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c34a8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c34a8.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_c34a8.dir/feature_tests.cxx.o  -o cmTC_c34a8 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b88e4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b88e4.dir/build.make CMakeFiles/cmTC_b88e4.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b88e4.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_b88e4.dir/feature_tests.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b88e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b88e4.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_b88e4.dir/feature_tests.cxx.o  -o cmTC_b88e4 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cd2b6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd2b6.dir/build.make CMakeFiles/cmTC_cd2b6.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cd2b6.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_cd2b6.dir/feature_tests.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cd2b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd2b6.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_cd2b6.dir/feature_tests.cxx.o  -o cmTC_cd2b6 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wall succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ba63c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ba63c.dir/build.make CMakeFiles/cmTC_ba63c.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ba63c.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -DHAVE_FLAG_-Wall   -Wall -o CMakeFiles/cmTC_ba63c.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_ba63c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba63c.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -DHAVE_FLAG_-Wall    CMakeFiles/cmTC_ba63c.dir/src.cxx.o  -o cmTC_ba63c -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wextra succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7063e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7063e.dir/build.make CMakeFiles/cmTC_7063e.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7063e.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -DHAVE_FLAG_-Wextra   -Wextra -o CMakeFiles/cmTC_7063e.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_7063e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7063e.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -DHAVE_FLAG_-Wextra    CMakeFiles/cmTC_7063e.dir/src.cxx.o  -o cmTC_7063e -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wunused succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fd963/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd963.dir/build.make CMakeFiles/cmTC_fd963.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd963.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -DHAVE_FLAG_-Wunused   -Wunused -o CMakeFiles/cmTC_fd963.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_fd963
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd963.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -DHAVE_FLAG_-Wunused    CMakeFiles/cmTC_fd963.dir/src.cxx.o  -o cmTC_fd963 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-pedantic succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8b0f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8b0f1.dir/build.make CMakeFiles/cmTC_8b0f1.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8b0f1.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -DHAVE_FLAG_-pedantic   -pedantic -o CMakeFiles/cmTC_8b0f1.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_8b0f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b0f1.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -DHAVE_FLAG_-pedantic    CMakeFiles/cmTC_8b0f1.dir/src.cxx.o  -o cmTC_8b0f1 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wsign-compare succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_39b9d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_39b9d.dir/build.make CMakeFiles/cmTC_39b9d.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_39b9d.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -DHAVE_FLAG_-Wsign-compare   -Wsign-compare -o CMakeFiles/cmTC_39b9d.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_39b9d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39b9d.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -DHAVE_FLAG_-Wsign-compare    CMakeFiles/cmTC_39b9d.dir/src.cxx.o  -o cmTC_39b9d -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-fno-omit-frame-pointer succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4fed8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4fed8.dir/build.make CMakeFiles/cmTC_4fed8.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4fed8.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -DHAVE_FLAG_-fno-omit-frame-pointer   -fno-omit-frame-pointer -o CMakeFiles/cmTC_4fed8.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_4fed8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fed8.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -DHAVE_FLAG_-fno-omit-frame-pointer    CMakeFiles/cmTC_4fed8.dir/src.cxx.o  -o cmTC_4fed8 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wtype-limits succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3f945/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3f945.dir/build.make CMakeFiles/cmTC_3f945.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3f945.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -DHAVE_FLAG_-Wtype-limits   -Wtype-limits -o CMakeFiles/cmTC_3f945.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_3f945
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f945.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -DHAVE_FLAG_-Wtype-limits    CMakeFiles/cmTC_3f945.dir/src.cxx.o  -o cmTC_3f945 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wuninitialized succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60782/fast"
+/usr/bin/make -f CMakeFiles/cmTC_60782.dir/build.make CMakeFiles/cmTC_60782.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_60782.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -DHAVE_FLAG_-Wuninitialized   -Wuninitialized -o CMakeFiles/cmTC_60782.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_60782
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60782.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -DHAVE_FLAG_-Wuninitialized    CMakeFiles/cmTC_60782.dir/src.cxx.o  -o cmTC_60782 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wno-deprecated succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d0548/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d0548.dir/build.make CMakeFiles/cmTC_d0548.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0548.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -DHAVE_FLAG_-Wno-deprecated   -Wno-deprecated -o CMakeFiles/cmTC_d0548.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_d0548
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0548.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -DHAVE_FLAG_-Wno-deprecated    CMakeFiles/cmTC_d0548.dir/src.cxx.o  -o cmTC_d0548 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wstrict-aliasing succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e6dcd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e6dcd.dir/build.make CMakeFiles/cmTC_e6dcd.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e6dcd.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -DHAVE_FLAG_-Wstrict-aliasing   -Wstrict-aliasing -o CMakeFiles/cmTC_e6dcd.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_e6dcd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6dcd.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -DHAVE_FLAG_-Wstrict-aliasing    CMakeFiles/cmTC_e6dcd.dir/src.cxx.o  -o cmTC_e6dcd -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wpointer-arith succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_04836/fast"
+/usr/bin/make -f CMakeFiles/cmTC_04836.dir/build.make CMakeFiles/cmTC_04836.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_04836.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -DHAVE_FLAG_-Wpointer-arith   -Wpointer-arith -o CMakeFiles/cmTC_04836.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_04836
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04836.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -DHAVE_FLAG_-Wpointer-arith    CMakeFiles/cmTC_04836.dir/src.cxx.o  -o cmTC_04836 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-fvisibility=hidden succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7e616/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7e616.dir/build.make CMakeFiles/cmTC_7e616.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7e616.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -DHAVE_FLAG_-fvisibility=hidden   -fvisibility=hidden -o CMakeFiles/cmTC_7e616.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_7e616
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e616.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -DHAVE_FLAG_-fvisibility=hidden    CMakeFiles/cmTC_7e616.dir/src.cxx.o  -o cmTC_7e616 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wformat-nonliteral succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_37a08/fast"
+/usr/bin/make -f CMakeFiles/cmTC_37a08.dir/build.make CMakeFiles/cmTC_37a08.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37a08.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -DHAVE_FLAG_-Wformat-nonliteral   -Wformat-nonliteral -o CMakeFiles/cmTC_37a08.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_37a08
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37a08.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -DHAVE_FLAG_-Wformat-nonliteral    CMakeFiles/cmTC_37a08.dir/src.cxx.o  -o cmTC_37a08 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Winit-self succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_de9e3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_de9e3.dir/build.make CMakeFiles/cmTC_de9e3.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_de9e3.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -DHAVE_FLAG_-Winit-self   -Winit-self -o CMakeFiles/cmTC_de9e3.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_de9e3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de9e3.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -DHAVE_FLAG_-Winit-self    CMakeFiles/cmTC_de9e3.dir/src.cxx.o  -o cmTC_de9e3 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wparentheses succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cfc54/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cfc54.dir/build.make CMakeFiles/cmTC_cfc54.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cfc54.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -DHAVE_FLAG_-Wparentheses   -Wparentheses -o CMakeFiles/cmTC_cfc54.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_cfc54
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfc54.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -DHAVE_FLAG_-Wparentheses    CMakeFiles/cmTC_cfc54.dir/src.cxx.o  -o cmTC_cfc54 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-Wunreachable-code succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_69397/fast"
+/usr/bin/make -f CMakeFiles/cmTC_69397.dir/build.make CMakeFiles/cmTC_69397.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_69397.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -DHAVE_FLAG_-Wunreachable-code   -Wunreachable-code -o CMakeFiles/cmTC_69397.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_69397
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69397.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -DHAVE_FLAG_-Wunreachable-code    CMakeFiles/cmTC_69397.dir/src.cxx.o  -o cmTC_69397 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_FLAG_-ggdb3 succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_872da/fast"
+/usr/bin/make -f CMakeFiles/cmTC_872da.dir/build.make CMakeFiles/cmTC_872da.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_872da.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -DHAVE_FLAG_-ggdb3   -ggdb3 -o CMakeFiles/cmTC_872da.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_872da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_872da.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -DHAVE_FLAG_-ggdb3    CMakeFiles/cmTC_872da.dir/src.cxx.o  -o cmTC_872da -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f1354/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1354.dir/build.make CMakeFiles/cmTC_f1354.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1354.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_f1354.dir/CheckIncludeFile.c.o   -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f1354
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1354.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f1354.dir/CheckIncludeFile.c.o  -o cmTC_f1354 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4eefa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4eefa.dir/build.make CMakeFiles/cmTC_4eefa.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4eefa.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4eefa.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4eefa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4eefa.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4eefa.dir/CheckFunctionExists.c.o  -o cmTC_4eefa -rdynamic -lpthread 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_VISIBILITY succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f0503/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f0503.dir/build.make CMakeFiles/cmTC_f0503.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f0503.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -DCOMPILER_HAS_HIDDEN_VISIBILITY   -fvisibility=hidden -o CMakeFiles/cmTC_f0503.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f0503
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0503.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -DCOMPILER_HAS_HIDDEN_VISIBILITY    CMakeFiles/cmTC_f0503.dir/src.cxx.o  -o cmTC_f0503 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f596c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f596c.dir/build.make CMakeFiles/cmTC_f596c.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f596c.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_f596c.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f596c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f596c.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY    CMakeFiles/cmTC_f596c.dir/src.cxx.o  -o cmTC_f596c -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_97c77/fast"
+/usr/bin/make -f CMakeFiles/cmTC_97c77.dir/build.make CMakeFiles/cmTC_97c77.dir/build
+make[1]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_97c77.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -DCOMPILER_HAS_DEPRECATED_ATTR   -o CMakeFiles/cmTC_97c77.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx:2:25: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+     int main() { return somefunc();}
+                         ^~~~~~~~
+/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+ __attribute__((__deprecated__)) int somefunc() { return 0; }
+                                     ^~~~~~~~
+/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx:2:34: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+     int main() { return somefunc();}
+                                  ^
+/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+ __attribute__((__deprecated__)) int somefunc() { return 0; }
+                                     ^~~~~~~~
+Linking CXX executable cmTC_97c77
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97c77.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 -fPIC -DCOMPILER_HAS_DEPRECATED_ATTR    CMakeFiles/cmTC_97c77.dir/src.cxx.o  -o cmTC_97c77 -rdynamic 
+make[1]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+Performing C++ SOURCE FILE Test HAVE_FLAG_-fvisibility=hidden succeeded with the following output:
+Change Dir: /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_07481/fast"
+make[2]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_07481.dir/build.make CMakeFiles/cmTC_07481.dir/build
+make[3]: Entering directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_07481.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -DHAVE_FLAG_-fvisibility=hidden   -fvisibility=hidden -o CMakeFiles/cmTC_07481.dir/src.cxx.o -c /home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:11: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_07481
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07481.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++11 -g -pthread -Wall -Wextra -Wunused -pedantic -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -DHAVE_FLAG_-fvisibility=hidden    CMakeFiles/cmTC_07481.dir/src.cxx.o  -o cmTC_07481 -rdynamic 
+make[3]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/home/vedad/Informatik/ijtihad-dev/ijtihad/cryptominisat/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
