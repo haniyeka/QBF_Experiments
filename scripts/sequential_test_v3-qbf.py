@@ -97,6 +97,7 @@ print("Nodes :", Nodes)
 print("CWD: ",os.getcwd())
 for i in FileExtensions:
     TestInstances = glob.glob(InstancesDirectory+ "*" + i)
+    
 date = datetime.datetime.now()
 
 log = []
