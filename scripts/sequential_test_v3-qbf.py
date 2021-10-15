@@ -47,6 +47,8 @@ def SubmitJob(SolverPath,SolverShort,Partition,Node,TestInstances,Path,Argument,
         TestString = TestInstances[i]
         currentInstance = TestString.split('/')
         currentInstanceShort = currentInstance[len(currentInstance)-1][:-8] 
+        if (currentInstanceShort[0]=='.'): 
+            currentInstanceShort = currentInstanceShort[1:] #remove '.' 
         print("Solver:"+SolverShort)
         print("CurrentInstance:"+currentInstanceShort)
         with  open (Path + "/jobs/" + "{}__{}.job".format(SolverShort,currentInstanceShort),"w") as file:
@@ -56,8 +58,8 @@ def SubmitJob(SolverPath,SolverShort,Partition,Node,TestInstances,Path,Argument,
                   file.write('#SBATCH --time=0-01:23:20'+'\n')
                   file.write('#SBATCH --partition={}'.format(Partition)+'\n')
                   file.write('#SBATCH --job-name={}__{}'.format(SolverShort,currentInstanceShort)+ '\n')
-                  file.write('#SBATCH --output=./{}__{}.output'.format(SolverShort,currentInstanceShort) + '\n')
-                  file.write('#SBATCH --error=./{}__{}.error'.format(SolverShort,currentInstanceShort) + '\n')
+                  file.write('#SBATCH --output=./{}__{}__%J.output'.format(SolverShort,currentInstanceShort) + '\n')
+                  file.write('#SBATCH --error=./{}__{}__%J.error'.format(SolverShort,currentInstanceShort) + '\n')
                   file.write('#SBATCH --exclusive' + '\n')
                   file.write('module load gcc' + '\n')
                   file.write('module load parallel' + '\n')
