@@ -2,5 +2,5 @@
 teton
 /gscratch/hkashgar/BatchScripts/solvertests/sample/*
 QBF
-.qdimacs
+.qdimacs,.dqdimacs
 	
